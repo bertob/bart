@@ -22,11 +22,11 @@ body {
 #bart_titlebar {
     position:absolute;
     left:0px;
-    width:350px;
+    width:600px;
     top:0px;
     height:31px;
     z-index:20;
-    background-image:  url("Images/titlebar.png");
+    background-color: #333;
 }
 
 #bart_titlebar_icon {
@@ -81,19 +81,19 @@ body {
     height:0px;     /* Changed when map folds out. */
     z-index:10;
     overflow:hidden;
-    background-image:  url("Images/middle.png");
-	background-repeat:  repeat-y;
-	-apple-dashboard-region: dashboard-region(control rectangle);
+		//background-image:  url("Images/middle.png");
+		background-repeat:  repeat-y;
+		-apple-dashboard-region: dashboard-region(control rectangle);
 }
 
 #bart_map_canvas {
-    position:absolute;
-	left:8px;
+  position:absolute;
+	left:0px;
 	top:0px;
 }
 
 #bart_belowmap_div {
-    position:absolute;
+  position:absolute;
 	left:0px;
 	top:0px;       /* Changed when map folds out. */
 }
@@ -105,20 +105,21 @@ body {
 #bart_triplist_div {
     position:absolute;
     left:0px;
-    width:350px;
+    width:600px;
     top:0px;
     height:155px;
     z-index:20;
     cursor:move;
-    background-image:  url("Images/middle.png");
-	background-repeat:  repeat-y;
-	-apple-dashboard-region: dashboard-region(control rectangle);
+    background-color: #D6EBEF;
+		//background-image:  url("Images/middle.png");
+		background-repeat:  repeat-y;
+		-apple-dashboard-region: dashboard-region(control rectangle);
 }
 
 #bart_triplist_canvas {
     position:absolute;
-	left:8px;
-	top:0px;
+		left:0px;
+		top:0px;
 }
 
 #bart_triplist_help_div {
@@ -162,28 +163,27 @@ body {
 #bart_lowerbars_div {
     position:absolute;
     left:0px;
-    width:350px;
+    width:600px;
     top:155px;
-    height:29px;    /* Changed to 45 when timebar expands. */
-	overflow:hidden;
+    height:20px;    /* Changed to 45 when timebar expands. */
+		overflow:hidden;
     z-index:20;
-    background:  url("Images/bottombar.png") bottom left;
+    background-color: #333;
 }
 
 #bart_lowerbars_top {
     position:absolute;
     left:8px;
-    width:334px;
+    width:600px;
     top:0px;
     height:8px;
     z-index:30;
-    background:  url("Images/bottombar_top.png") top left;
 }
 
 #bart_timebar {
     position:absolute;
     left:0px;
-    width:350px;
+    width:600px;
     top:0px;
     height:0px;    /* Changed to 16 when timebar expands. */
 	overflow:hidden;
@@ -193,7 +193,7 @@ body {
 #bart_timebar_buttons_image {
     position:absolute;
     left:0px;
-    width:350px;
+    width:600px;
     top:0px;
     height:16px;
     z-index:130;
@@ -292,6 +292,10 @@ body {
     top:0px;        /* Changed to 16 when timebar expands. */
     height:29px;
     z-index:40;
+}
+
+.bottom {
+	top: 50px;
 }
 
 #bart_buttons_image {
